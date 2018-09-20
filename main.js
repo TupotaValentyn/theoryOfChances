@@ -3,7 +3,7 @@ const { app, BrowserWindow, ipcMain } = require('electron')
 let mainWindow = null
 
 ipcMain.on('LOADED', () => {
-  mainWindow.loadURL(`file://${__dirname}/view/index.html`)
+  mainWindow.loadURL(`file://${__dirname}/view/menu-page/menu-page.html`)
 })
 
 app.on('ready', () => {
