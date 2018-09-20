@@ -13,7 +13,13 @@ app.on('ready', () => {
     resizable: false,
     autoHideMenuBar: true,
     title: 'Theory Of Chances',
+    show: false
     // frame: false
   })
+
   mainWindow.loadURL(`file://${__dirname}/view/splash-screen/splash-screen.html`)
+
+  mainWindow.webContents.on('did-finish-load', () => {
+    mainWindow.show()
+  })
 })
