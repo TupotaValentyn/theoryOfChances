@@ -1,52 +1,9 @@
+const { changeExistingCss, changeExistHtml } = require('../re-rendering-functions')
+const { renderMenuCSS } = require('./render-menu-css')
+const { renderMenuHTML } = require('./render-menu-html')
+
 const container = document.querySelector('.container')
 let stage = 'menu'
-const topics = [
-  {
-    id: 0,
-    title: 'Elementary formulas',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, reiciendis.'
-  },
-  {
-    id: 1,
-    title: 'Topic 2',
-    desc: 'Description 2'
-  },
-  {
-    id: 2,
-    title: 'Topic 3',
-    desc: 'Description 3'
-  },
-  {
-    id: 3,
-    title: 'Topic 4',
-    desc: 'Description 4'
-  },
-  {
-    id: 4,
-    title: 'Topic 5',
-    desc: 'Description 5'
-  },
-  {
-    id: 5,
-    title: 'Topic 6',
-    desc: 'Description 6'
-  },
-  {
-    id: 6,
-    title: 'Topic 7',
-    desc: 'Description 7'
-  },
-  {
-    id: 7,
-    title: 'Topic 8',
-    desc: 'Description 8'
-  },
-  {
-    id: 8,
-    title: 'Topic 9',
-    desc: 'Description 9'
-  }
-]
 
 const loadTopics = (e) => {
   const button = e.target;
@@ -84,3 +41,10 @@ const renderTopics = () => {
   })
   return topicsList
 }
+
+const renderMenuPage = () => {
+  changeExistingCss(renderMenuCSS())
+  changeExistHtml(renderMenuHTML())
+}
+
+module.exports.renderMenuPage = renderMenuPage

@@ -40,19 +40,9 @@ svg {
   border-radius: 5px;
 }
 
-@keyframes progress {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
 .progress-inner {
   width: 0;
   height: 7px;
   background-color: #ffffff;
   border-radius: 5px;
-  animation: progress 5s both;
 }
