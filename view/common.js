@@ -31,8 +31,8 @@ button.addEventListener('click', ()=> {mytoo()}, false)
 
 function mytoo(){
   answer.innerHTML = `
-<span data='Определение вероятности события'>${array.definitionOfProbability.toFixed(3)}</span>
-<span data='Вероятность несовместного события' >${array.theProbabilityOfAnInconsistentEvent.toFixed(3)}</span>
+<span data='Определение вероятности события A'>${array.definitionOfProbability.toFixed(3)}</span>
+<span data='Определение вероятности события B' >${array.theProbabilityOfAnInconsistentEvent.toFixed(3)}</span>
 <span data='Вероятность противоположного события' >${array.probabilityOfTheOppositeEvent.toFixed(3)}</span>
 <span data='Вероятность суммы несовместных событий' >${array.probabilityofTheSumOfInconsistentEvents.toFixed(3)}</span>
 <span data='Вероятность произведения независимых событий' >${array.probabilityOfTheProductOfIndependentEvents.toFixed(3)}</span>
