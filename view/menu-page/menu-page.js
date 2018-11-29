@@ -1,4 +1,4 @@
-const { changeExistingCss, changeExistHtml } = require('../re-rendering-functions')
+const { changeExistCss, changeExistHtml } = require('../re-rendering-functions')
 const { renderMenuCSS } = require('./render-menu-css')
 const { renderMenuHTML } = require('./render-menu-html')
 
@@ -17,7 +17,7 @@ const destroyButton = (button) => {
 }
 
 const renderMenuPage = () => {
-  changeExistingCss(renderMenuCSS())
+  changeExistCss(renderMenuCSS())
   changeExistHtml(renderMenuHTML())
 }
 

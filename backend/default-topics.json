@@ -3,7 +3,60 @@
   [
     {
       "id": 0,
-      "name": "Elementary formulas"
+      "name": "Elementary formulas",
+      "formulas":
+      [
+        {
+          "id": 0,
+          "name": "KXMKDLCMDKLCMDKCKD"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Statistical analysis",
+      "inputs":
+      [
+        {
+          "id": 0,
+          "name": "Xi"
+        },
+        {
+          "id": 1,
+          "name": "Ni"
+        }
+      ],
+      "formulas":
+      [
+        {
+          "id": 0,
+          "name": "|XB|"
+        },
+        {
+          "id": 1,
+          "name": "Me"
+        },
+        {
+          "id": 2,
+          "name": "Mo"
+        },
+        {
+          "id": 3,
+          "name": "Db"
+        },
+        {
+          "id": 4,
+          "name": "Sig B"
+        },
+        {
+          "id": 5,
+          "name": "R"
+        },
+        {
+          "id": 6,
+          "name": "V"
+        }
+      ]
     }
   ]
 }
